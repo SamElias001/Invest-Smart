@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 146, 168);
+    border-bottom: 3px solid yellow;
+    padding: 30px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#titulo i,h1 {
+    font-size: 40px;
+    color: yellow;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    margin: auto;
+    height: 85vh;
+    background-color: rgb(93, 93, 189);
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: yellow;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    width: 600px;
+    height: 700px;
+    border: 3px solid yellow;
+    border-radius: 3%;
+    background-color:rgb(58, 146, 168);
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 50vh;
+    margin: 5px 0px 5px 0px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.campo label {
+    color: yellow;
+}
+
+.campo input {
+    width: auto;
+    border: 3px solid rgb(98, 44, 168);
+    height: 30px;
+    color: rgba(255, 255, 0, 0.671);
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 0px 5px 0px 5px;
+    transition: all 1s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 0, 0.671);
+}
+
+.campo input:focus {
+    background-color: transparent;
+    border: 3px solid gray;
+    padding-left: 10px;
+    color: white;
+}
+
+form button {
+    margin-top: 15px;
+    background-color: orange;
+    width: 500px;
+    border-radius: 10px;
+    height: 55px;
+    border: 3px solid yellow;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+form button:hover {
+    background-color: white;
+    font-size: 13px;
+    border: 5px solid rgb(98, 44, 168);
+}
+
+footer {
+    border-top: 3px solid yellow;
+    background-color: rgb(58, 146, 168);
+    height: 33px;
+    text-align: center;
+    color: yellow;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Smart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <section id="titulo">
+            <i class="fa-solid fa-money-bill-trend-up"></i>
+            <h1>Invest Smart</h1>
+        </section>
+    </header>
+
+    <main>
+        <form onsubmit="return calcularRetorno()">
+            <section id="conteudo">
+                <h2>Calcule o Retorno do Investimento</h2>
+            </section>
+            
+            <section class="campos">
+                <section class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+                </section>
+
+                <section class="campo">
+                    <label for="capital">Capital</label>
+                    <input type="number" name="capital" id="capital" value="1000" step="1" min="1" max="1000000" required>
+                </section>
+
+                <section class="campo">
+                    <label for="juros">Taxa de Juros Mensal</label>
+                    <input type="number" name="juros" id="juros" value="1" step="0.01" min="0.01" max="100" required>
+                </section>
+
+                <section class="campo">
+                    <label for="meses">Número de Meses Investidos</label>
+                    <input type="number" name="meses" id="meses" value="1" step="1" min="1" max="1200" required>
+                </section>
+            </section>
+
+            <section id="botaoDeCalculo">
+                <button type="submit">Calcular Retorno dos Investimentos</button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Desenvolvido por Samuel Elias</h2>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
